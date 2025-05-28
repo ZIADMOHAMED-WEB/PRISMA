@@ -1,0 +1,22 @@
+# configs/default_config.yaml
+
+environment:
+  name: PRISMAEnv
+  input_dim: 768
+
+agents:
+  search:
+    model: DQN
+    lr: 0.001
+    gamma: 0.99
+    epsilon_start: 1.0
+    epsilon_min: 0.1
+
+  full_text:
+    model: DQN
+    lr: 0.001
+    gamma: 0.99
+
+training:
+  episodes: 500
+  batch_size: 64
